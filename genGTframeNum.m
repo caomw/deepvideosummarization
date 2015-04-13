@@ -14,7 +14,10 @@ for v=3:length(userSummDir)
         if(strcmp(gtDir(3).name,'Thumbs.db'))
             gtDir(3)=[];
         end
-        gtLabels{v-2,u-1}=sort(cell2mat(arrayfun(@(X) str2double(X.name(6:end-4)),gtDir(3:end),'uniformoutput',false)),'ascend');
+        if(strcmp(gtDir(end).name,'Thumbs.db'))
+            gtDir(end)=[];
+        end
+        gtLabels{v-2,u-1}=sort(cell2mat(arrayfun(@(X) abs(str2double(X.name(6:end-4))),gtDir(3:end),'uniformoutput',false)),'ascend');
     end
 end
 save('gtLabels.mat','gtLabels');
