@@ -11,10 +11,10 @@ end
 time=tic;
 oracleSummary=cell(size(gtLabels,1),1);
 % for each video
-for v=1:size(gtLabels,1)
+for v=[1:10,12,22:50]%1:size(gtLabels,1)
     % compute correlation between all frames, matched if CORR>THRESHOLD
     CORR=corr(allFisher{v});
-    THRESHOLD=0;
+    THRESHOLD=0.2;
     MATCHED=CORR>THRESHOLD;
     Yu=gtLabels(v,2:6)'; % user-labeled summaries
     Ystar=[]; % desired oracle summary
@@ -43,6 +43,20 @@ for v=1:size(gtLabels,1)
         end
     end
     oracleSummary{v}=Ystar;
+    oracleFolder=['oracleSummary/',gtLabels{v,1}];
+    if(~exist(oracleFolder,'dir'))
+        mkdir(oracleFolder);
+    end
+    if(v==11||(13<=v&&v<=21)) % .flv: all frames
+        sampleFolder=['allFrames227x227/',gtLabels{v,1}];
+    else % .avi: 1 frame/sec
+        sampleFolder=['sampledFrames227x227/',gtLabels{v,1}];
+    end
+    for f=1:length(oracleSummary{v})
+        copyfile([sampleFolder,'/',int2str(oracleSummary{v}(f)),'.jpg'],oracleFolder);
+    end
     fprintf('v=%d oracle summary done, time=%fsec\n',v,toc(time));
 end
+save('oracleSummary.mat','oracleSummary');
+
     
