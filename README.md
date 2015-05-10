@@ -1,2 +1,3 @@
-# deepvideosummarization
-701 final project
+# Deep Video Summarization
+10701 final project
+Shih-En Wei, Cheng-Hsuan Lin, Wei-Chiu Ma
