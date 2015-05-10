@@ -1,0 +1,5 @@
+data/
+deepFeature/
+trained_model/
+caffe_701/caffe/models/
+exp_caffe/exp1_getFeature/bvlc_reference_caffenet.caffemodel

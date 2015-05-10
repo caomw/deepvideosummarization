@@ -1,0 +1,32 @@
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
+src/caffe/layers/euclidean_loss_layer.cu(17): warning: statement is unreachable
+
+src/caffe/layers/euclidean_loss_layer.cu(93): warning: dynamic initialization in unreachable code
+
